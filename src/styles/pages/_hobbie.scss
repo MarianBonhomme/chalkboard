@@ -1,0 +1,35 @@
+section.hobbie {
+
+    img.street,
+    img.randonnees {
+        rotate: -19deg;
+    }
+
+    img.voyage {
+        rotate: 19deg;
+    }
+
+    .postit-left {
+        img {
+            transition: all ease-in-out 0.3s;
+        }
+
+        &:hover {
+            img {
+                transform: rotate(19deg);
+            }
+        }
+    }
+
+    .postit-right {
+        img {
+            transition: all ease-in-out 0.3s;
+        }
+
+        &:hover {
+            img {
+                transform: rotate(-19deg);
+            }
+        }
+    }
+}

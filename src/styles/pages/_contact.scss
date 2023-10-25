@@ -1,0 +1,42 @@
+section.contact {
+    ul.coord-list {
+        li {
+            margin-bottom: 25px;
+
+            img {
+                width: 50px;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    ul.rs-list {
+        padding: 0;
+
+        li {
+            img {
+                width: 100px;
+                filter: grayscale(1);
+                transition: all ease-in-out 0.2s;
+            }
+
+            p {
+                margin-top: 50px;
+                font-size: 1.3rem;
+                opacity: 0;
+                transition: all ease-in-out 0.2s;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.3) translateY(-50px);
+                    filter: grayscale(0);
+                }
+
+                p {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

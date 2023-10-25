@@ -1,0 +1,87 @@
+.logo {
+
+    img {
+        height: 50px;
+        animation: spin 10s linear infinite;
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    h3 {
+        margin-left: 20px;
+        margin-bottom: 0;
+        font-family: $chalk;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+.navigation {
+    ul {
+        display: flex;
+
+        a {
+            text-decoration: none;
+            padding: 5px;
+            margin-right: 20px;
+
+            li {
+                color: $white;
+                transition: 0.2s;
+                cursor: pointer;
+
+                &:hover {
+                    color: $yellow;
+                }
+            }
+        }
+
+        .nav-active {
+            position: relative;
+
+            &::after {
+                content: "";
+                height: 2px;
+                width: 0;
+                background: $yellow;
+                position: absolute;
+                border-radius: 10px;
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                -webkit-animation: anim 0.3s ease forwards;
+                animation: anim 0.6s ease forwards;
+
+                @-webkit-keyframes anim {
+                    to {
+                        width: 100%;
+                    }
+                }
+
+                @keyframes anim {
+                    to {
+                        width: 100%;
+                    }
+                }
+            }
+
+            li {
+                color: $yellow;
+            }
+        }
+    }
+}
