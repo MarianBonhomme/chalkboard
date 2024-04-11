@@ -7,7 +7,7 @@ const Logo = () => {
       <NavLink to={"/"}>
         <div className="logo d-flex align-items-center">
           <img src="./img/sun.svg" alt="logo sun" />
-          <h3 className="text-white">Victoria Carobbi</h3>
+          <h1 className="text-white">John Doe</h1>
         </div>
       </NavLink>
     </div>
@@ -19,37 +19,25 @@ const Navigation = () => {
     <div className="navigation">
       <ul>
         <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
-          <li>Accueil</li>
+          <li>Home</li>
         </NavLink>
         <NavLink
           to="/about"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
-          <li>Qui suis-je ?</li>
+          <li>About</li>
         </NavLink>
         <NavLink
-          to="/school"
+          to="/service"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
-          <li>Diplômes</li>
-        </NavLink>
-        <NavLink
-          to="/pro"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-        >
-          <li>Professions</li>
-        </NavLink>
-        <NavLink
-          to="/hobbie"
-          className={(nav) => (nav.isActive ? "nav-active" : "")}
-        >
-          <li>Passions</li>
+          <li>Service</li>
         </NavLink>
         <NavLink
           to="/contact"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
-          <li>Coordonnées</li>
+          <li>Contact</li>
         </NavLink>
       </ul>
     </div>
