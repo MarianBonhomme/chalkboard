@@ -35,7 +35,7 @@ const SvgComponent = (props) => {
 const Wrapper = styled.div`
   .animated {
     width: 100%;
-    height: 75%;
+    height: 30dvh;
     stroke-dasharray: ${(props) => props.pathLength};
     stroke-dashoffset: ${(props) => props.pathLength};
   }
