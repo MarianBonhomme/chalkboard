@@ -1,11 +1,11 @@
 import React from "react";
 
 const liStyle = {
-  marginBottom: "20px",
+  marginBottom: "25px",
 };
 const imgStyle = {
-  width: "20px",
-  marginRight: "20px",
+  width: "30px",
+  marginRight: "30px",
 };
 
 const AboutList = (props) => {
