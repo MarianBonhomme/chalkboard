@@ -23,12 +23,12 @@ const Home = () => {
   const scotchStyle = {
     width: "50%",
     top: "5%",
-    right: "0%",
+    right: "-5%",
     rotate: "45deg",
   };
 
   const titleStyle = {
-    fontSize: "3rem",
+    fontSize: "2.5rem",
     marginTop: "-50px",
   };
 
@@ -49,18 +49,19 @@ const Home = () => {
             className="position-absolute img-fluid"
           />
           <img
-            src="./img/photo-vic.jpg"
-            alt="victoria"
+            src="./img/pdp.jpg"
+            alt="me"
             style={pdpStyle}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           />
         </div>
-        <div className="col-6 d-flex flex-column justify-content-around position-relative">
+        
+        <div className="h-100 col-6 d-flex flex-column justify-content-evenly position-relative">
           <SvgComponent />
-          <h1 className="text-center text-white" style={titleStyle}>
-            Bienvenue sur mon portfolio !
-          </h1>
+          <h2 className="text-center text-white" style={titleStyle}>
+            Welcome to my awesome website !
+          </h2>
         </div>
       </section>
     </div>
